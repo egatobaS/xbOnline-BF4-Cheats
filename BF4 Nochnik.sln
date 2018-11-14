@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BF4 Nochnik", "BF4 Nochnik.vcxproj", "{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CodeAnalysis|Xbox 360 = CodeAnalysis|Xbox 360
+		Debug|Xbox 360 = Debug|Xbox 360
+		Profile_FastCap|Xbox 360 = Profile_FastCap|Xbox 360
+		Profile|Xbox 360 = Profile|Xbox 360
+		Release_LTCG|Xbox 360 = Release_LTCG|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.CodeAnalysis|Xbox 360.ActiveCfg = CodeAnalysis|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.CodeAnalysis|Xbox 360.Build.0 = CodeAnalysis|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Debug|Xbox 360.ActiveCfg = Release_LTCG|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Debug|Xbox 360.Build.0 = Release_LTCG|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Profile_FastCap|Xbox 360.ActiveCfg = Profile_FastCap|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Profile_FastCap|Xbox 360.Build.0 = Profile_FastCap|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Profile|Xbox 360.ActiveCfg = Profile|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Profile|Xbox 360.Build.0 = Profile|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Release_LTCG|Xbox 360.ActiveCfg = Release_LTCG|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Release_LTCG|Xbox 360.Build.0 = Release_LTCG|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Release_LTCG|Xbox 360.Deploy.0 = Release_LTCG|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F050C6F6-4C18-4C32-B0A8-F77CF527D77C}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E79F35D9-30D7-4BE6-BA5D-1304B1C70F79}
+	EndGlobalSection
+EndGlobal

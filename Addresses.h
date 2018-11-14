@@ -1,0 +1,290 @@
+#pragma once
+
+class Detour;
+
+#define DEVKIT 1
+extern void(*XNotify)(wchar_t*);
+extern Detour* (*GetDetour)();
+extern void* (*xbOHookFunction)(Detour* a, void* b, void* c);
+extern void(*drawText)(int UIImmediateModeRenderer, int UITextObject, Vector4* rect, float scale);
+extern void(*setText)(int UITextObject, const char* text, bool disableUpdateFromData);
+extern void(*setAlignment)(int UITextObject, int halign, int valign);
+extern int(*create)(int UITextObject, const char* text, int style);
+extern void(*drawRect)(int _this, Vector4* Coords, Vector4* Color, long long unk);
+extern int(*SetKit)(int r3, int r4, int r5);
+extern int(*GetKit)(int r3, const char* r4, int r5);
+extern void(*ApplyPatches)();
+extern void(*SuperJumpPatchON)();
+extern void(*SuperJumpPatchOff)();
+extern int(*ResolveTextureByName)(int r3, const char* r4, int r5, int r6, int r7, int r8);
+extern void(*DrawTextureFromHandle)(int r3, int r4, int* r5, int* r6, int* r7, long long r8);
+extern void(*AddVector)(Vector3 From, Vector3 To, Vector3& Out);
+extern float(*GetDistance)(Vector3 c1, Vector3 c2);
+extern float(*VectorLength2D)(Vector3* pV);
+extern void(*GetFullAmmo)();
+extern void(*DrawRotatedShader)(float x, float y, float width, float height, float angle, Vector4* Color);
+extern void(*DrawLine)(float X1, float Y1, float X2, float Y2, float Width, Vector4* LineColor);
+extern void(*SendChatMessage)(wchar_t *Message);
+
+
+struct SYS_FUNCTION_ADDRESS
+{
+	void* HookFunction;
+	void* XNotify;
+	void* memcpy;
+	void* memset;
+	void* strcpy;
+	void* memcmp;
+	void* strcmp;
+	void* Sleep;
+	void* MmIsAddressValid;
+	void* FIsMmIoAddress;
+	void* GetDetours;
+};
+
+struct GAME_ADDRESSES_BF4
+{
+	int _0x89916E74; //0x89916E74
+	int _0x1218;	 //0x1218    
+	int _0x1288;	 //0x1288    
+	int _0x12f8;	 //0x12f8    
+	int _0x1448;	 //0x1448    
+	int _0x14b8;	 //0x14b8    
+	int _0x1528;	 //0x1528    
+	int _0x700;		 //0x700     
+	int _0x14;		 //0x14      
+	int _0xA0;		 //0xA0      
+	int _0x1000;	 //0x1000    
+	int _0x58;		 //0x58      
+	int _0x2A8;		 //0x2A8     
+	int _0x8991B90C; //0x8991B90C
+	int _0x88AA3798; //0x88AA3798
+	int _0x88AA5E40; //0x88AA5E40
+	int _0x88A9F9B8; //0x88A9F9B8
+	int _0x8852B0A0; //0x8852B0A0
+	int _0x88AA2C80; //0x88AA2C80
+	int _0x88548C90; //0x88548C90
+	int _0x88A94758; //0x88A94758
+	int _0x886608C4; //0x886608C4
+	int _0x887620c0; //0x887620c0
+	int _0x88762008; //0x88762008
+	int _0x88759DBC; //0x88759DBC
+	int _0x48A94BE1; //0x48A94BE1
+	int _0x8873E1E4; //0x8873E1E4
+	int _0x484c5711; //0x484c5711
+	int _0x88D0D6AC; //0x88D0D6AC
+	int _0x3D6089A3; //0x3D6089A3
+	int _0x616BF168; //0x616BF168
+	int _0x906B0000; //0x906B0000
+	int _0x60000000; //0x60000000
+	int _0x8815DB54; //0x8815DB54
+	int _0x89158D00; //0x89158D00
+	int _0x885F4E54; //0x885F4E54
+	int _0x885F4EEC; //0x885F4EEC
+	int _0x885F410C; //0x885F410C
+	int _0x885F4114; //0x885F4114
+	int _0x885F4DB8; //0x885F4DB8
+	int _0x885F4E1C; //0x885F4E1C
+	int _0x88623830; //0x88623830
+	int _0x88623838; //0x88623838
+	int _0x886236EC; //0x886236EC
+	int _0x88628E40; //0x88628E40
+	int _0x497423f0; //0x497423f0
+	int _0x4800004C; //0x4800004C
+	int _0x48000034; //0x48000034
+	int _0x480002FC; //0x480002FC
+	int _0x409A0034; //0x409A0034
+	int _0x1000038C; //0x1000038C
+	int _0x41300000; //0x41300000
+	int _0x4099004C; //0x4099004C
+	int _0xD3350020; //0xD3350020
+	int _0x92D50040; //0x92D50040
+	int _0x419A0430; //0x419A0430
+	int _0x409900D0; //0x409900D0
+	int _0x11BFD9C3; //0x11BFD9C3
+	int _0x915F0040; //0x915F0040
+	int _0x11BED9C3; //0x11BED9C3
+	int _0x7FE3FB78; //0x7FE3FB78
+	int _0x8991B78C; //0x8991B78C
+	int _0x150;		 //0x150     
+	int _0x89916E78; //0x89916E78
+	int _0x34;		 //0x34      
+	int _0x18;		 //0x18      
+	int _0x3644;	 //0x3644    
+	int _0x2090;	 //0x2090    
+	int _0x10;		 //0x10      
+	int _0x89A39F28; //0x89A39F28
+	int _0x5C;		 //0x5C      
+	int _0x20;		 //0x20      
+	int _0x89A10B10; //0x89A10B10
+	int _0x89A39D48; //0x89A39D48
+	int _0x89A39DE8; //0x89A39DE8
+	int _0x89A38D38; //0x89A38D38
+	int _0x880330E8; //0x880330E8
+	int _0x897C150C; //0x897C150C
+	int _0x897C1510; //0x897C1510
+	int _0x88C06B54; //0x88C06B54
+	int _0x89168184; //0x89168184
+	int _0x88B59AEC; //0x88B59AEC
+	int _0x88C0D9F4; //0x88C0D9F4
+	int _0x88C0DA00; //0x88C0DA00
+	int _0x48000040; //0x48000040
+	int _0x419A0040; //0x419A0040
+	int _0x419A0020; //0x419A0020
+	int _0x7C8B2378; //0x7C8B2378
+	int _0x39200001; //0x39200001
+	int _0x988B0000; //0x988B0000
+	int _0x39600000; //0x39600000
+	int _0x882FB7B8; //0x882FB7B8
+	int _0x88B9FD58; //0x88B9FD58
+	int _0x88AD3A28; //0x88AD3A28
+	int _0x88D0D6A8; //0x88D0D6A8
+	int _0x88763360; //0x88763360
+	int _0x88679E80; //0x88679E80
+	int _0x88AA1FC8; //0x88AA1FC8
+	int _0x8856A310; //0x8856A310
+	int _0x915C00F0; //0x915C00F0
+	int _0x4BFFFAD9; //0x4BFFFAD9
+	int _0x913F00F0; //0x913F00F0
+
+#if defined(DEVKIT)
+
+	void SetAddress()
+	{
+		_0x89916E74 = 0x89916E74;
+		_0x1218 = 0x1218;
+		_0x1288 = 0x1288;
+		_0x12f8 = 0x12f8;
+		_0x1448 = 0x1448;
+		_0x14b8 = 0x14b8;
+		_0x1528 = 0x1528;
+		_0x700 = 0x700;
+		_0x14 = 0x14;
+		_0xA0 = 0xA0;
+		_0x1000 = 0x1000;
+		_0x58 = 0x58;
+		_0x2A8 = 0x2A8;
+		_0x8991B90C = 0x8991B90C;
+		_0x88AA3798 = 0x88AA3798;
+		_0x88AA5E40 = 0x88AA5E40;
+		_0x88A9F9B8 = 0x88A9F9B8;
+		_0x8852B0A0 = 0x8852B0A0;
+		_0x88AA2C80 = 0x88AA2C80;
+		_0x88548C90 = 0x88548C90;
+		_0x88A94758 = 0x88A94758;
+		_0x886608C4 = 0x886608C4;
+		_0x887620c0 = 0x887620c0;
+		_0x88762008 = 0x88762008;
+		_0x88759DBC = 0x88759DBC;
+		_0x48A94BE1 = 0x48A94BE1;
+		_0x8873E1E4 = 0x8873E1E4;
+		_0x484c5711 = 0x484c5711;
+		_0x88D0D6AC = 0x88D0D6AC;
+		_0x3D6089A3 = 0x3D6089A3;
+		_0x616BF168 = 0x616BF168;
+		_0x906B0000 = 0x906B0000;
+		_0x60000000 = 0x60000000;
+		_0x8815DB54 = 0x8815DB54;
+		_0x89158D00 = 0x89158D00;
+		_0x885F4E54 = 0x885F4E54;
+		_0x885F4EEC = 0x885F4EEC;
+		_0x885F410C = 0x885F410C;
+		_0x885F4114 = 0x885F4114;
+		_0x885F4DB8 = 0x885F4DB8;
+		_0x885F4E1C = 0x885F4E1C;
+		_0x88623830 = 0x88623830;
+		_0x88623838 = 0x88623838;
+		_0x886236EC = 0x886236EC;
+		_0x88628E40 = 0x88628E40;
+		_0x497423f0 = 0x497423f0;
+		_0x4800004C = 0x4800004C;
+		_0x48000034 = 0x48000034;
+		_0x480002FC = 0x480002FC;
+		_0x409A0034 = 0x409A0034;
+		_0x1000038C = 0x1000038C;
+		_0x41300000 = 0x41300000;
+		_0x4099004C = 0x4099004C;
+		_0xD3350020 = 0xD3350020;
+		_0x92D50040 = 0x92D50040;
+		_0x419A0430 = 0x419A0430;
+		_0x409900D0 = 0x409900D0;
+		_0x11BFD9C3 = 0x11BFD9C3;
+		_0x915F0040 = 0x915F0040;
+		_0x11BED9C3 = 0x11BED9C3;
+		_0x7FE3FB78 = 0x7FE3FB78;
+		_0x8991B78C = 0x8991B78C;
+		_0x150 = 0x150;
+		_0x89916E78 = 0x89916E78;
+		_0x34 = 0x34;
+		_0x18 = 0x18;
+		_0x3644 = 0x3644;
+		_0x2090 = 0x2090;
+		_0x10 = 0x10;
+		_0x89A39F28 = 0x89A39F28;
+		_0x5C = 0x5C;
+		_0x20 = 0x20;
+		_0x89A10B10 = 0x89A10B10;
+		_0x89A39D48 = 0x89A39D48;
+		_0x89A39DE8 = 0x89A39DE8;
+		_0x89A38D38 = 0x89A38D38;
+		_0x880330E8 = 0x880330E8;
+		_0x897C150C = 0x897C150C;
+		_0x897C1510 = 0x897C1510;
+		_0x88C06B54 = 0x88C06B54;
+		_0x89168184 = 0x89168184;
+		_0x88B59AEC = 0x88B59AEC;
+		_0x88C0D9F4 = 0x88C0D9F4;
+		_0x88C0DA00 = 0x88C0DA00;
+		_0x48000040 = 0x48000040;
+		_0x419A0040 = 0x419A0040;
+		_0x419A0020 = 0x419A0020;
+		_0x7C8B2378 = 0x7C8B2378;
+		_0x39200001 = 0x39200001;
+		_0x988B0000 = 0x988B0000;
+		_0x39600000 = 0x39600000;
+		_0x882FB7B8 = 0x882FB7B8;
+		_0x88B9FD58 = 0x88B9FD58;
+		_0x88AD3A28 = 0x88AD3A28;
+		_0x88D0D6A8 = 0x88D0D6A8;
+		_0x88763360 = 0x88763360;
+		_0x88679E80 = 0x88679E80;
+		_0x88AA1FC8 = 0x88AA1FC8;
+		_0x8856A310 = 0x8856A310;
+		_0x915C00F0 = 0x915C00F0;
+		_0x4BFFFAD9 = 0x4BFFFAD9;
+		_0x913F00F0 = 0x913F00F0;
+	}
+
+#endif
+};
+
+
+extern GAME_ADDRESSES_BF4* Addresses;
+
+struct GAME_ADDRESS_TRANSFER_BF4
+{
+	GAME_ADDRESSES_BF4* Addresses;
+
+	void* drawText;
+	void* setText;
+	void* setAlignment;
+	void* create;
+	void* drawRect;
+	void* SetKit;
+	void* GetKit;
+	void* ApplyPatches;
+	void* SuperJumpPatchON;
+	void* SuperJumpPatchOff;
+	void* ResolveTextureByName;
+	void* DrawTextureFromHandle;
+	void* AddVector;
+	void* GetDistance;
+	void* VectorLength2D;
+	void* GetFullAmmo;
+	void* DrawRotatedShader;
+	void* DrawLine;
+	void* SendChatMessage;
+
+};
+
+void LoadAddresses();

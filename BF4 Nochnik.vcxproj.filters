@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Detour.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionHandler.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuDrawing.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuOptions.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCustomization.cpp">
+      <Filter>Resources\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes.cpp">
+      <Filter>Resources\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientVaultComponent.cpp">
+      <Filter>Resources\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Resources\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Resources\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Addresses.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Detour.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExceptionHandler.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuDrawing.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuOptions.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Headers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCustomization.h">
+      <Filter>Headers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes.h">
+      <Filter>Headers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientVaultComponent.h">
+      <Filter>Headers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing.h">
+      <Filter>Headers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Addresses.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleIni.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nochnik.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{72c1e477-14f7-4407-91ae-b63e09f41c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{538f5f1b-b4ff-461f-b026-e203619af6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Game">
+      <UniqueIdentifier>{abc75390-c0ea-49e8-ac74-2df841f80600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Game">
+      <UniqueIdentifier>{6ea44ada-37a8-4837-b626-c4cefcaba473}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
